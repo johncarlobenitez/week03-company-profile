@@ -1,0 +1,77 @@
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.about-intro {
+    background: white;
+}
+
+.about-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.about-content p {
+    margin-bottom: 22px;
+
+    color: #475569;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+}
+
+
+/* MISSION / VISION / VALUES */
+
+.about-values {
+    padding: 80px 0;
+
+    background: var(--green);
+}
+
+.about-values .cards {
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+.about-values .card {
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    box-shadow: none;
+}
+
+.about-values .card:hover {
+    border-color: var(--gold);
+
+    background:
+        rgba(255,255,255,0.09);
+}
+
+.about-values .card h3 {
+    color: var(--gold);
+}
+
+.about-values .card p {
+    color: #cbd5d1;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .about-values .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}

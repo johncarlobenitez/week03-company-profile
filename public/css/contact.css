@@ -1,0 +1,165 @@
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
+
+.contact-section {
+    background: var(--off-white);
+}
+
+
+/* GRID */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* INFORMATION */
+
+.contact-info h2 {
+    margin-bottom: 20px;
+
+    color: var(--green);
+
+    font-size: 32px;
+}
+
+.contact-info > p {
+    margin-bottom: 30px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* CONTACT ITEM */
+
+.contact-item {
+    margin-bottom: 22px;
+}
+
+.contact-item strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--green);
+
+    font-size: 15px;
+}
+
+.contact-item p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* FORM CARD */
+
+.contact-form {
+    padding: 35px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow);
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+
+    color: var(--green);
+
+    font-size: 28px;
+}
+
+
+/* FORM */
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+
+.contact-form input {
+    height: 48px;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--green);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(11,61,46,0.08);
+}
+
+.contact-form button {
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+}

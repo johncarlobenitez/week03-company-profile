@@ -1,0 +1,163 @@
+/* =====================================================
+   SERVICES PAGE
+===================================================== */
+
+.services-page {
+    background: var(--off-white);
+}
+
+
+/* SERVICES GRID */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* SERVICE CARD */
+
+.service-card {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.04);
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 20px 40px
+        rgba(11,61,46,0.10);
+}
+
+
+/* ICON */
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 13px;
+
+    background: var(--gold-light);
+
+    font-size: 30px;
+}
+
+
+/* NUMBER */
+
+.service-number {
+    margin-left: auto;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* TITLE */
+
+.service-card h3 {
+    margin-bottom: 12px;
+
+    color: var(--green);
+
+    font-size: 20px;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* LIST */
+
+.service-list {
+    margin-top: 20px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.service-list li {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+.service-list li::before {
+    content: "✓";
+
+    color: var(--gold-dark);
+
+    font-weight: bold;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
