@@ -167,9 +167,29 @@ Laravel loads the Blade view and sends the final HTML page back to the browser.
 
 ### Architecture Diagram
 
-The architecture diagram for this project can be found inside the `documentation` folder.
+The diagram below shows the basic request flow of my Laravel company profile website.
 
----
+When a user opens a page, the browser sends a request to Laravel. The route inside `web.php` receives the request and sends it to the correct method in `CompanyController`. The controller then loads the Blade view, and Laravel returns the generated HTML back to the browser.
+
+<p align="center">
+    <img src="documentation/Architecture%20Diagram.png" alt="SOLARA Laravel MVC Architecture Diagram" width="850">
+</p>
+
+The request flow can be summarized as:
+
+```text
+Client / Browser
+       ↓
+Route (web.php)
+       ↓
+CompanyController
+       ↓
+Blade View
+       ↓
+HTML Response
+       ↓
+Browser
+```
 
 ## 5. Laravel Routing
 
